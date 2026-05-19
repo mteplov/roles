@@ -60,9 +60,9 @@
 
 ![8](https://github.com/mteplov/roles/blob/main/img/08.png)
 
-![9](https://github.com/mteplov/roles/blob/main/img/10.png)
+![101](https://github.com/mteplov/roles/blob/main/img/101.png)
 
-![10](https://github.com/mteplov/roles/blob/main/img/11.png)
+![11](https://github.com/mteplov/roles/blob/main/img/11.png)
 
 
 После успешного тестирования я сделал коммит с рабочим сценарием:
