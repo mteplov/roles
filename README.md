@@ -60,7 +60,7 @@
 
 ![8](https://github.com/mteplov/roles/blob/main/img/08.png)
 
-![9](https://github.com/mteplov/rolesg/blob/main/img/10.png)
+![9](https://github.com/mteplov/roles/blob/main/img/10.png)
 
 ![10](https://github.com/mteplov/roles/blob/main/img/11.png)
 
