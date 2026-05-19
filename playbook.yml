@@ -1,0 +1,17 @@
+---
+- name: Test Vector Role
+  hosts: all
+  become: false   # отключаем sudo, чтобы не падало в Docker
+
+  tasks:
+    - name: Install Python3, pip and sudo
+      apt:
+        name:
+          - python3
+          - python3-pip
+          - sudo
+        state: present
+        update_cache: yes
+
+  roles:
+    - vector-role

@@ -68,7 +68,7 @@
 После успешного тестирования я сделал коммит с рабочим сценарием:
 
    
-https://github.com/mteplov/roles/releases/tag/v1.0.0
+https://github.com/mteplov/roles/releases/tag/v1.0.1
 
 
 - - - - - - - - - - - - 
@@ -143,7 +143,7 @@ https://github.com/mteplov/roles/releases/tag/v1.0.0
 
    
 
-https://github.com/mteplov/roles/releases/tag/v1.0.1
+https://github.com/mteplov/roles/releases/tag/v1.0.2
 
 - - - - - - - - - - - - 
 
