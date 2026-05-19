@@ -1,0 +1,17 @@
+---
+- name: Destroy
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Set async_dir for HOME env
+      ansible.builtin.set_fact:
+        ansible_async_dir: "{{ lookup('env', 'HOME') }}/.ansible_async/"
+      when: lookup('env', 'HOME') | bool
+
+
+    - name: Destroy podman instances
+      community.general.podman_container:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ query('podman.containers') }}"
+      ignore_errors: yes

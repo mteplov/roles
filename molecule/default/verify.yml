@@ -1,0 +1,29 @@
+- name: Verify vector role
+  hosts: all
+  become: true
+  tasks:
+    - name: Check vector binary exists
+      stat:
+        path: /usr/bin/vector
+      register: vector_bin
+
+    - name: Assert vector installed
+      assert:
+        that:
+          - vector_bin.stat.exists
+
+    - name: Validate vector config
+      command: vector validate /etc/vector/vector.toml
+      register: vector_validate
+      changed_when: false
+      failed_when: vector_validate.rc != 0
+
+    - name: Check vector service
+      systemd:
+        name: vector
+      register: vector_service
+
+    - name: Assert vector service running
+      assert:
+        that:
+          - vector_service.status.ActiveState == "active"

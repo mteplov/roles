@@ -1,0 +1,21 @@
+---
+dependency:
+  name: galaxy
+
+driver:
+  name: docker
+
+platforms:
+  - name: instance
+    image: ubuntu:22.04
+    privileged: true
+    command: /bin/bash -c "while true; do sleep 1000; done"
+    pre_build_image: true
+
+provisioner:
+  name: ansible
+  playbooks:
+    converge: ../../playbook.yml
+
+verify:
+  enabled: false

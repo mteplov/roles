@@ -1,0 +1,5 @@
+vector_path: /opt/vector
+vector_data_path: /var/lib/vector
+vector_config: /etc/vector/vector.toml
+vector_version: 0.26.1
+vector_service_state: started
